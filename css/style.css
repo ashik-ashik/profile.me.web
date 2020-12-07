@@ -1,0 +1,539 @@
+
+
+
+
+/* common css start */
+@font-face{
+    font-family: 'minifont';
+    src: url(../font/OK.TTF);
+}
+@font-face{
+    font-family: 'linkfont';
+    src: url(../font/Amaranth-Regular.otf);
+}
+@font-face{
+    font-family: 'namefont';
+    src: url(../font/AGENCYB.TTF);
+}
+a{
+    font-family: 'linkfont' !important;
+}
+.name,
+#welcome{
+    font-family: 'namefont';
+}
+p{
+    font-size: 15px;
+    font-family: 'roboto';
+}
+p > strong{
+    font-size: 20px;
+    font-family: 'roboto';
+}
+.section-title h2{
+    font-size: 43px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: #191919;
+    position: relative;
+    z-index: 2;
+}
+.section-title span{
+    position: absolute;
+    color: #d8d8d8;
+    left: 0;
+    right: 0;
+    top: 0px;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 0;
+    user-select: none;
+}
+
+.section-title .mini-title{
+    color: #cc1616;
+    font-size: 20px;
+    font-family: 'minifont';
+}
+.section-title small > small,
+.section-title small .p-before{
+    color: #fff;
+    font-weight: 900;
+    font-size: 15px;
+}
+.btn{
+    transition: ease-in-out .4s !important;
+}
+.btn-outline-danger{
+    letter-spacing: 2px !important;
+}
+/* common css end */
+
+
+/*  section css start */
+
+.section-title h2,
+#welcome{
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    font-weight: 900;
+}
+#about .section-title h2{
+    background: url(../img/FmNa.gif)fixed center center;
+}
+#services .section-title h2{
+    background: url(../img/images.jpeg)fixed center center;
+}
+#portfolio .section-title h2{
+    background: url(../img/wave2.gif)fixed center center;
+    background-size: cover;
+}
+#skill .section-title h2{
+    background: url(../img/star1.gif)fixed center center;
+    /* background-size: cover; */
+}
+#contact .section-title h2{
+    background: url(../img/simple-2.jpg)fixed;
+    /* background-size: cover; */
+}
+#welcome{
+    background: url(../img/images.jpeg)fixed center center;
+}
+#cv-download-btn{
+    position: relative;
+    letter-spacing: 2px;
+    text-decoration: none !important;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.5s;
+    background: #fffb00;
+}
+#cv-download-btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    transition: 0.5s;
+}
+#cv-download-btn::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 5px;
+    height: 5px;
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+    transition: 0.5s;
+}
+#cv-download-btn:hover::before,
+#cv-download-btn:hover::after{
+    width: 100%;
+    height: 100%;
+    transition-delay: .2s;
+}
+#cv-download-btn:hover{
+   background: #000000;
+   transition-delay: .5s;
+   color: #fff ;
+}
+.box,
+.box span{
+    position: relative;
+}
+#services .box::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    border-top: 1px solid #21ebff;
+    border-left: 1px solid #21ebff;
+    transition: 1s;
+}
+#services .box::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    height: 1px;
+    border-bottom: 1px solid #21ebff;
+    border-right: 1px solid #21ebff;
+    transition: 1s;
+}
+
+#services .box:hover::before,
+#services .box:hover::after{
+    width: 100%;
+    height: 100%;
+}
+.card-body{
+    position: relative;
+    z-index: 4;
+}
+#portfolio .card-body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    border-top: 2px solid #ffe600;
+    border-left: 1px solid #000000;
+    transition: 1s;
+    z-index: -1;
+}
+#portfolio .card-body::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    height: 1px;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+    transition: 1s;
+    z-index: -1;
+}
+
+#portfolio .card-body:hover::before,
+#portfolio .card-body:hover::after{
+    width: 100%;
+    height: 100%;
+}
+/*  section css end */
+
+
+/* scroll top start */
+.gototop{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    cursor: pointer;
+    display: none;
+    animation: goto linear 1.5s infinite alternate;
+}
+.gototop .bx{
+    font-size: 45px;
+    color: #fa8e02;
+}
+  @keyframes goto{
+    form{
+      bottom: 25px;
+    }
+    to{
+      bottom: 32px;
+    }
+  }
+
+/* scroll top end */
+
+
+
+/* topbar css start */
+.con i,
+.ico i{
+    font-size: 17px;
+    color: #d1d1d1;
+    transition: ease-in-out .4s;
+    border-color: #b9b9b9;
+}
+.con i:hover,
+.ico i:hover{
+    color: #ffffff !important;
+    background-color: #0e0088;
+    border-radius: 5px;
+    border-color: #ffffff;
+
+}
+/* topbar css end */
+
+/* menubar section css start */
+.menubar{
+    top: 3px;
+    background: #000000c5;
+}
+.defaultmenu{
+    background: #000000;
+}
+.scrollmenu{
+    background: #1e04b3f5;
+}
+.navbar-brand img{
+    filter: contrast(0);
+    height: 45px;
+    width: auto;
+    transition: ease-in-out .4s;
+}
+.navbar-brand img:hover{
+    filter: brightness(2000);
+}
+/* menubar section css end */
+
+/* hero section css start */
+#hero{
+    background: url(../img/hero.jpeg) fixed center center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    min-height: 500px;
+}
+.hero-after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #00000073;
+    z-index: 2;
+}
+.typing{
+	padding: 5px 10px;
+	background: #ffae00;
+	border-radius: 2px;
+}
+/* hero section css end */
+
+/*  about section css start */
+
+.aninate-name{
+    animation: animateName 3s linear infinite;
+}
+@keyframes animateName{
+    0%{
+        color: #690092;
+    }
+    50%{
+        color: #da6201;
+    }
+    70%{
+        color: #940000;
+    }
+    90%{
+        color: #3300be;
+    }
+}
+  
+/*  about section css end */
+
+/* skills section css start */
+#skill{
+    background: #047692;
+}
+#skill .section-title span{
+    color: #35abc9;
+}
+#skill .section-title h2{
+    color: #000;
+}
+#skill .skill .bx{
+    font-size: 25px;
+}
+
+  .box-cir .chart{
+    position: relative;
+    height: 110px;
+    width: 110px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+    line-height: 110px;
+    color: #fff;
+}
+.box-cir h5{
+    color: #fff;
+}
+.box-cir .chart canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* skills section css end */
+
+/* services section css start */
+
+.btn-portfolio{
+    outline: none;
+    border: none;
+    position: relative;
+    letter-spacing: 2px;
+    text-decoration: none !important;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.5s;
+    background: #ddd;
+    border-radius: 0px;
+}
+.btn-portfolio::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    border-top: 1px solid  transparent;
+    border-left: 1px solid transparent ;
+    transition: 0.5s;
+}
+.btn-portfolio::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    height: 1px;
+    border-bottom: 1px solid transparent ;
+    border-right: 1px solid transparent ;
+    transition: 0.5s;
+}
+.btn-portfolio:hover::before,
+.btn-portfolio:hover::after{
+    width: 100%;
+    height: 100%;
+    transition-delay: .2s;
+    border-color: #000;
+}
+.btn-portfolio:hover{
+   background: #000000;
+   transition-delay: .5s;
+   color: #fff ;
+}
+.portfolio-active{
+    background: #000;
+    color: #fff;
+}
+
+
+#services{
+    background: #161616;
+}
+#services .section-title h2{
+  color: #e7e7e7;
+}
+#services .section-title span{
+    color: #363636;
+}
+
+ .box {
+    transition: ease-in-out .4s;
+}
+ .box span{
+    background: #cc1616;
+    transition: ease-in-out .4s;
+}
+.box:hover span{
+    background: #ffffff;
+}
+.box:hover{
+    background: #cc1616 !important;
+    padding-top: 38px !important;
+    padding-bottom: 58px !important;
+}
+.box:hover h3,
+.box:hover h4,
+.box:hover p{
+    color: #fff !important;
+}
+#services .bx{
+    font-size: 30px;
+    color: #fff;
+}
+#services  .box:hover .bx{
+    color: #cc1616;
+}
+/* services section css end */
+
+/* portfolio section css start */
+.card img{
+    height: 230px !important;
+}
+.overlay {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    background-color: #000000a6;
+  }
+  .card-img:hover .overlay {
+    opacity: 1;
+  }
+  .card-img .overlay .bx {
+    font-size: 35px;
+    transition: ease-in-out .4s;
+  }
+  .card-img .overlay .bx:hover {
+    color: #13ff13 !important;
+  }
+/* portfolio section css end */
+
+/*  contact section css start */
+#contact .box p{
+    color: #000;
+    font-size: 14px;
+    font-family: 'linefont';
+}
+#contact .box .bx {
+    color: #000;
+    font-size: 30px;
+}
+#contact .box span {
+    background: none;
+    border: 1px dotted #cc1616;
+}
+#contact .box h4 {
+    color:#cc1616;
+}
+#contact .box:hover span{
+    background: #fff;
+    border: 1px solid #fff;
+}
+#contact .box:hover .bx{
+    color: #cc1616;
+}
+#submition-status{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+.success{
+    color: #ffffff;
+    background: #06a800;
+    padding: 7px 12px;
+    animation: statusHide 5s forwards;
+}
+.error{
+    color: #ffffff;
+    background: #f01101;
+    padding: 7px 12px;
+    animation: statusHide 5s forwards;
+}
+@keyframes statusHide{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+/*  contact section css end */
+
+

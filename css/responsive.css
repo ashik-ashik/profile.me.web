@@ -1,0 +1,57 @@
+
+
+/*<!--For X-small device-->*/
+
+@media (max-width: 767px) {
+    #welcome{
+        font-size: 32px !important;
+    }
+    .name{
+        font-size: 38px;
+    }
+    .hi-text{
+        font-size: 20px !important;
+    }
+}
+
+
+/*<!--For small device-->*/
+
+@media only screen and (min-width:768px) and (max-width: 991px) {
+    #welcome{
+        font-size: 32px !important;
+    }
+    .name{
+        font-size: 38px;
+    }
+    .hi-text{
+        font-size: 20px !important;
+    }
+}
+
+
+/*<!--For medium device-->*/
+
+@media only screen and (min-width:992px) and (max-width: 1199px) {
+    #about img{
+        filter: grayscale(100);
+        transition: ease-in-out 0.5s;
+    }
+    #about img:hover{
+        filter: grayscale(00);
+    }
+}
+
+
+
+/*<!--For Large device-->*/
+
+@media (min-width:1200px) {
+    #about img{
+        filter: grayscale(100);
+        transition: ease-in-out 0.5s;
+    }
+    #about img:hover{
+        filter: grayscale(0);
+    }
+}
