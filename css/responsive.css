@@ -18,6 +18,9 @@
     #about-type{
         font-size: 20px !important;
     }
+    #type-skill{
+        font-size: 16px !important;
+    }
 }
 
 
@@ -34,7 +37,10 @@
         font-size: 20px !important;
     }
     #about-type{
-        font-size: 24px !important;
+        font-size: 20px !important;
+    }
+    #type-skill{
+        font-size: 18px !important;
     }
 }
 
