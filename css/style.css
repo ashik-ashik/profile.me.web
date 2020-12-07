@@ -69,6 +69,13 @@ p > strong{
 .btn-outline-danger{
     letter-spacing: 2px !important;
 }
+section{
+    width: 100%;
+    overflow-x: hidden;
+}
+img{
+    width: 100%;
+}
 /* common css end */
 
 

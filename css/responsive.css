@@ -3,8 +3,8 @@
 /*<!--For X-small device-->*/
 
 @media (max-width: 767px) {
-    .display-3{
-        font-size: 32px !important;
+    .display-2{
+        font-size: 31px !important;
     }
     .name{
         font-size: 38px;
@@ -15,14 +15,16 @@
     .section-title span{
         display: none;
     }
-    
+    #about-type{
+        font-size: 25px !important;
+    }
 }
 
 
 /*<!--For small device-->*/
 
 @media only screen and (min-width:768px) and (max-width: 991px) {
-    .display-3{
+    .display-2{
         font-size: 32px !important;
     }
     .name{
@@ -30,6 +32,9 @@
     }
     .hi-text{
         font-size: 20px !important;
+    }
+    #about-type{
+        font-size: 28px !important;
     }
 }
 
