@@ -224,8 +224,8 @@ img{
 /* scroll top start */
 .gototop{
     position: fixed;
-    bottom: 25px;
-    right: 25px;
+    bottom: 10px;
+    right: 7px;
     cursor: pointer;
     display: none;
     animation: goto linear 1.5s infinite alternate;
