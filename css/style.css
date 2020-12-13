@@ -236,10 +236,10 @@ img{
 }
   @keyframes goto{
     form{
-      bottom: 25px;
+      bottom: 10px;
     }
     to{
-      bottom: 32px;
+      bottom: 20px;
     }
   }
 
@@ -370,6 +370,89 @@ img{
 
 /* services section css start */
 
+
+#services{
+    background: #161616;
+}
+#services .section-title h2{
+  color: #e7e7e7;
+}
+#services .section-title span{
+    color: #363636;
+}
+
+#services .box .service-icon{
+    width: 60px;
+    height: 60px;
+    /* background: #13ff13; */
+    margin: auto;
+    position: relative;
+}
+#services .box .service-icon .bx{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+#services .box .service-icon::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #cc1616;
+    border: 2px dashed transparent;
+    /* border-radius: 50%; */
+    z-index: 1;
+    transition: ease .4s;
+}
+#services .box:hover .service-icon::before{
+    background: #fff;
+    border: 2px dashed #cc1616;
+    border-radius: 50%;
+    animation: serviceani 5s linear infinite;
+}
+@keyframes serviceani{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+ .box {
+    transition: ease-in-out .4s;
+}
+ .box span{
+    background: #cc1616;
+    transition: ease-in-out .4s;
+}
+.box:hover span{
+    background: #ffffff;
+}
+.box:hover{
+    background: #cc1616 !important;
+    padding-top: 38px !important;
+    padding-bottom: 58px !important;
+}
+.box:hover h3,
+.box:hover h4,
+.box:hover p{
+    color: #fff !important;
+}
+#services .bx{
+    font-size: 30px;
+    color: #fff;
+}
+#services  .box:hover .bx{
+    color: #cc1616;
+}
+/* services section css end */
+
+/* portfolio section css start */
+
 .btn-portfolio{
     outline: none;
     border: none;
@@ -421,47 +504,6 @@ img{
     color: #fff;
 }
 
-
-#services{
-    background: #161616;
-}
-#services .section-title h2{
-  color: #e7e7e7;
-}
-#services .section-title span{
-    color: #363636;
-}
-
- .box {
-    transition: ease-in-out .4s;
-}
- .box span{
-    background: #cc1616;
-    transition: ease-in-out .4s;
-}
-.box:hover span{
-    background: #ffffff;
-}
-.box:hover{
-    background: #cc1616 !important;
-    padding-top: 38px !important;
-    padding-bottom: 58px !important;
-}
-.box:hover h3,
-.box:hover h4,
-.box:hover p{
-    color: #fff !important;
-}
-#services .bx{
-    font-size: 30px;
-    color: #fff;
-}
-#services  .box:hover .bx{
-    color: #cc1616;
-}
-/* services section css end */
-
-/* portfolio section css start */
 .card img{
     height: 230px !important;
 }
