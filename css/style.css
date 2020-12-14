@@ -586,3 +586,14 @@ img{
 /*  contact section css end */
 
 
+/* comment section start */
+#comment textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    outline: none;
+    border: 1px solid #999;
+    color: #3300be;
+    height: 150px;
+    padding: 10px;
+}
+/* comment section end */
