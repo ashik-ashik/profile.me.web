@@ -533,6 +533,46 @@ img{
     color: #000;
     font-size: 14px;
     font-family: 'linefont';
+    position: relative;
+    padding: 5px 0;
+    transition: ease .4s;
+}
+#contact .box p::before{
+    content: 'Touch';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, #ff0000, #0033db, #002088);
+    padding-right: 5px;
+    text-align: end;
+    padding-top : 5px;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'namefont';
+    transition: ease .4s;
+}
+#contact .box p::after{
+    content: 'Here';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg,#002088, #0033db, #ff0000);
+    padding-left: 5px;
+    text-align: start;
+    padding-top : 5px;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'namefont';
+    transition: ease .4s;
+}
+#contact .box p:hover::before,
+#contact .box p:hover::after{
+    width: 1%;
+    opacity: 0;
 }
 #contact .box .bx {
     color: #000;
