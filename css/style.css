@@ -596,14 +596,14 @@ img{
     height: 150px;
     padding: 10px;
 }
-.comment .reply-able-comment{
+.comment .reply-show{
     cursor: pointer;
     color: #07006e;
 }
-.comment .comment-reply{
+.comment .reply{
     display: none;
 }
-.comment .reply-able-comment:hover{
+.comment .reply-show:hover{
     cursor: pointer;
     color: #b10000;
 }
