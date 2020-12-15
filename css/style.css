@@ -596,4 +596,15 @@ img{
     height: 150px;
     padding: 10px;
 }
+.comment .reply-able-comment{
+    cursor: pointer;
+    color: #07006e;
+}
+.comment .comment-reply{
+    display: none;
+}
+.comment .reply-able-comment:hover{
+    cursor: pointer;
+    color: #b10000;
+}
 /* comment section end */

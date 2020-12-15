@@ -29,6 +29,8 @@ var typed3 = new Typed('#about-type', {
 $(document).ready(function(){
 
 
+
+
   // menu scrolled
 
   $(window).scroll(function(){
@@ -140,6 +142,9 @@ $(document).ready(function(){
       }
     });
   });
+
+
+
 
 
 });

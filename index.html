@@ -655,6 +655,7 @@
     <!-- comment section start -->
     <section class="comment py-4" id="comment">
         <div class="container">
+                <h4 class="text-center text-primary text-monospace">Write a Comment : </h4>
             <form action="https://formspree.io/f/meqprvdd" method="POST" name="comment" id="comment" class="pb-4">
                 <div class="form-row">
                     <div class="col-lg-6">
@@ -673,14 +674,13 @@
                     </div>
                 </div>
                 <label for="comment-text">Write Comment : <span class="text-danger">*</span></label>
-                <textarea name="comment-text" id="comment-text" cols="30" rows="10" class="d-block" placeholder="Write Your Comment..."></textarea>
+                <textarea name="comment-text" id="comment-text" cols="30" rows="10" class="d-block" required placeholder="Write Your Comment..."></textarea>
                 <input type="submit" value="Comment" id="connebt-submit" class="btn btn-outline-info rounded-0 px-5">
 
-                <div id="comment-submitStatus"></div>
                 
             </form>
-            <div class="more-comment border-bottom border-top">
-                <a href="page/comment.html" target="_blank" rel="noopener noreferrer" class="text-decoration-none"><span class="text-dark">View More Comments...</span></a>
+            <div class="more-comment border-bottom border-top py-1">
+                <a href="page/comment.html" target="_blank" rel="noopener noreferrer" class="text-decoration-none"><i class="bx bx-comment-detail mr-2 text-dark"></i><span class="text-dark">View More Comments...</span></a>
             </div>
         </div>
     </section>
