@@ -1,6 +1,6 @@
 
 
-
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
 /* common css start */
 @font-face{
@@ -648,3 +648,14 @@ img{
     color: #b10000;
 }
 /* comment section end */
+
+/* checnge all p span tags font family */
+p, span{
+	font-family: 'Work Sans', sans-serif;
+}
+#contact a{
+	color: #eee !important;
+}
+#contact a{
+	color: #fff !important;
+}

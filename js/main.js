@@ -154,6 +154,14 @@ function myGhori(){
   const dates = new Date();
   const my_year = dates.getFullYear();
   document.querySelector("#copyYear").innerHTML = my_year;
+  
+  let experienceYear = my_year - 2019;
+  
+  let expre = ["One","Two","Three",'Four','Five','Six','Seven','Eight','Nine',"Ten"]
+  
+ 
+	 $("#experience").text(expre[experienceYear]);
+
 };
 myGhori();
 
