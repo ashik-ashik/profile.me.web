@@ -9,7 +9,7 @@ var typed3 = new Typed('#welcome', {
     loop: true
   });
 var typed3 = new Typed('#type-skill', {
-    strings: ['web designer', 'web developer', 'Freelancer'],
+    strings: ['web designer', 'web developer', 'MERN Developer'],
     typeSpeed: 70,
     backSpeed: 80,
     cursorChar: '|',
@@ -17,7 +17,7 @@ var typed3 = new Typed('#type-skill', {
     loop: true
   });
 var typed3 = new Typed('#about-type', {
-    strings: ['web designer', 'web developer', 'Freelancer'],
+    strings: ['web designer', 'web developer', 'MERN Developer'],
     typeSpeed: 70,
     backSpeed: 30,
     cursorChar: '|',
